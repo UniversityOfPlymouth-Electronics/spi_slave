@@ -1,5 +1,4 @@
-# FPGA (VHDL) Labs
-The latest / definitive copy of the ELEC240 labs
+# FPGA Slave Lab
 
 
 Below is a timing diagram for the SPI Client spi_bmh.vhd
