@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition"
 
--- DATE "02/04/2019 17:38:03"
+-- DATE "02/05/2019 16:08:53"
 
 -- 
 -- Device: Altera EP4CE22F17C6 Package FBGA256
@@ -1148,11 +1148,6 @@ SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|multi
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|multi_level_advanced_trigger_gen:advanced_trigger_wrapper|auto_generated|mgl_prim1|config_shiftreg_9|dffs\ : std_logic_vector(0 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|multi_level_advanced_trigger_gen:advanced_trigger_wrapper|auto_generated|mgl_prim1|config_shiftreg_6|dffs\ : std_logic_vector(0 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|buffer_write_address_delayed\ : std_logic_vector(12 DOWNTO 0);
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_gen:tdo_crc_calc|ALT_INV_lfsr[4]~1_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_word_counter[1]~5_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_crc_len_reg[26]~34_combout\ : std_logic;
-SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|ALT_INV_clr_reg~q\ : std_logic;
-SIGNAL \ALT_INV_altera_internal_jtag~TMSUTAP\ : std_logic;
 SIGNAL \inst3|ALT_INV_transmit:state[0]~0clkctrl_outclk\ : std_logic;
 SIGNAL \ALT_INV_inst~clkctrl_outclk\ : std_logic;
 SIGNAL \ALT_INV_altera_internal_jtag~TCKUTAPclkctrl_outclk\ : std_logic;
@@ -1160,6 +1155,11 @@ SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_reset_all
 SIGNAL \ALT_INV_CS_N~input_o\ : std_logic;
 SIGNAL \ALT_INV_SCLK_IN~input_o\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|ALT_INV_offload_shift_ena~combout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_gen:tdo_crc_calc|ALT_INV_lfsr[4]~1_combout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_word_counter[1]~5_combout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_crc_len_reg[26]~34_combout\ : std_logic;
+SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|ALT_INV_clr_reg~q\ : std_logic;
+SIGNAL \ALT_INV_altera_internal_jtag~TMSUTAP\ : std_logic;
 
 BEGIN
 
@@ -1318,11 +1318,6 @@ ww_devpor <= devpor;
 \50MHz_CLK~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \50MHz_CLK~input_o\);
 
 \inst14|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_e_CLOCK_1_OP_INCLK_bus\ <= (vcc & vcc & vcc & \inst14|altpll_component|auto_generated|wire_pll1_clk\(0));
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_gen:tdo_crc_calc|ALT_INV_lfsr[4]~1_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_gen:tdo_crc_calc|lfsr[4]~1_combout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_word_counter[1]~5_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|word_counter[1]~5_combout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_crc_len_reg[26]~34_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_len_reg[26]~34_combout\;
-\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|ALT_INV_clr_reg~q\ <= NOT \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|clr_reg~q\;
-\ALT_INV_altera_internal_jtag~TMSUTAP\ <= NOT \altera_internal_jtag~TMSUTAP\;
 \inst3|ALT_INV_transmit:state[0]~0clkctrl_outclk\ <= NOT \inst3|transmit:state[0]~0clkctrl_outclk\;
 \ALT_INV_inst~clkctrl_outclk\ <= NOT \inst~clkctrl_outclk\;
 \ALT_INV_altera_internal_jtag~TCKUTAPclkctrl_outclk\ <= NOT \altera_internal_jtag~TCKUTAPclkctrl_outclk\;
@@ -1330,6 +1325,11 @@ ww_devpor <= devpor;
 \ALT_INV_CS_N~input_o\ <= NOT \CS_N~input_o\;
 \ALT_INV_SCLK_IN~input_o\ <= NOT \SCLK_IN~input_o\;
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|ALT_INV_offload_shift_ena~combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|offload_shift_ena~combout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_gen:tdo_crc_calc|ALT_INV_lfsr[4]~1_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_gen:tdo_crc_calc|lfsr[4]~1_combout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_word_counter[1]~5_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|word_counter[1]~5_combout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_crc_len_reg[26]~34_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_len_reg[26]~34_combout\;
+\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|ALT_INV_clr_reg~q\ <= NOT \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|clr_reg~q\;
+\ALT_INV_altera_internal_jtag~TMSUTAP\ <= NOT \altera_internal_jtag~TMSUTAP\;
 
 -- Location: FF_X19_Y23_N5
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|trigger_out_ff\ : dffeas

@@ -6,6 +6,7 @@ source_file = 1, C:/Users/noutram/Documents/git/spi_slave/SPI_SLAVE_EXAMPLE/FPGA
 source_file = 1, C:/Users/noutram/Documents/git/spi_slave/SPI_SLAVE_EXAMPLE/FPGA/spi_PLL.vhd
 source_file = 1, C:/Users/noutram/Documents/git/spi_slave/SPI_SLAVE_EXAMPLE/FPGA/spi_test.bdf
 source_file = 1, C:/Users/noutram/Documents/git/spi_slave/SPI_SLAVE_EXAMPLE/FPGA/stp1.stp
+source_file = 1, C:/Users/noutram/Documents/git/spi_slave/SPI_SLAVE_EXAMPLE/FPGA/Chain1.cdf
 source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_b.vhd

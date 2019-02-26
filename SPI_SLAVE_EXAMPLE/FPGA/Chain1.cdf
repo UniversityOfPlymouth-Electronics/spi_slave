@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/noutram/Documents/git/spi_slave/SPI_SLAVE_EXAMPLE/FPGA/output_files/") File("spi_test.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22) Path("C:/Users/noutram/Documents/git/spi_slave/SPI_SLAVE_EXAMPLE/FPGA/output_files/") File("output.jic") MfrSpec(OpMask(1) SEC_Device(EPCS64) Child_OpMask(1 7));
 
 ChainEnd;
 
