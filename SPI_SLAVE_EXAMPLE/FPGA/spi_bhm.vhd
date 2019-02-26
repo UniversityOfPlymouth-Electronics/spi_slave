@@ -1,5 +1,5 @@
 -- SPI Slave (behavioural model)
--- v1.0
+-- v1.01
 -- Nicholas Outram (University of Plymouth)
 --
 library ieee;
