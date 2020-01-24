@@ -56,5 +56,11 @@ VHDL/SPIClient/transcript
 **/output_files/
 **/*.rpt
 
+#Keil Other
+**/BUILD
+SPI_SLAVE_EXAMPLE/MCU/ELEC240_SPI_HelloWorld.uvguix.*
+
 #Exclusions
 !/**/mbed/**    
+
+
